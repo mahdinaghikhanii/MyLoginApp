@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intentSignUp = new Intent(this, SignupActivity.class);
+        Intent intentSignUp = new Intent(this, HomeActivity.class);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

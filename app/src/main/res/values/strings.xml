@@ -9,7 +9,10 @@
     <string name="username_or_password_not_true">Username or password is not True</string>
 
 
-    <string name="sign_up" >Sign up</string>
-    <string name="sign_in_now" >Sign in now</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in_now">Sign in now</string>
     <string name="check_password">Check password</string>
+
+
+    <string name="welcome_text" >Welcome !</string>
 </resources>
