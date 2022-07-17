@@ -8,17 +8,12 @@
     tools:context=".HomeActivity">
 
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Home"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="50dp"
-        android:textSize="50dp"
-        android:layout_centerVertical="true"
-        android:textColor="@color/white"
-        android:text="@string/welcome_text"
-      >
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
 
-    </TextView>
+
 
 </RelativeLayout>

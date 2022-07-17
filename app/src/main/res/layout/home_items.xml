@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="70dp"
+        android:background="@drawable/shape_circle"
+        android:gravity="center"
+        android:text="A"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/primary_black"
+        android:textSize="26sp"
+        android:textColor="@color/color_primary"
+        android:layout_height="70dp">
+    </TextView>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:text="So big text"
+        android:fontFamily="@font/primary_black"
+        android:gravity="center"
+        android:layout_height= "wrap_content">
+    </TextView>
+
+</LinearLayout>
