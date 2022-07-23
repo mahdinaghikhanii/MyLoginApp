@@ -8,30 +8,26 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
 
-    private  String [] items = new String [20];
+    private  ArrayList<String> items = new ArrayList<>();
     HomeAdapter(){
-        items[0] = "mahdi";
-        items[1] = "reza";
-        items[2] = "taha";
-        items[3] = "khobe";
-        items[4] = "mahdi";
-        items[5] = "mahdi";
-        items[6] = "mahdi";
-        items[7] = "mahdi";
-        items[8] = "mahdi";
-        items[9] = "mahdi";
-        items[10] = "mahdi";
-        items[11] = "mahdi";
-        items[12] = "mahdi";
-        items[13] = "mahdi";
-        items[14] = "mahdi";
-        items[15] = "mahdi";
-        items[16] = "mahdi";
-        items[17] = "mahdi";
-        items[18] = "mahdi";
-        items[19] = "mahdi";
+        items.add("mahdi") ;
+        items.add("reza");
+        items.add("mahdi") ;
+        items.add("reza");
+        items.add("ALi") ;
+        items.add(  "Salam");
+        items.add("ee") ;
+        items.add(  "WHu");
+        items.add("Hello") ;
+        items.add(  "reza");
+        items.add("mahdi") ;
+        items.add(  "reza");
+        items.add("mahdi") ;
+        items.add(  "reza");
     }
 
     @NonNull
@@ -43,12 +39,12 @@ public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
-        holder.setName(items[position]);
+        holder.setName(items.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return items.length;
+        return items.size();
     }
 
 
@@ -65,5 +61,8 @@ public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolde
            description_tv.setText(full_name);
            small_tv.setText(full_name.substring(0,1));
        }
+
+
+       public void setonClick(View.OnClickListener clickListener){}
    }
 }

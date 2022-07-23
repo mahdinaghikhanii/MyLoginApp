@@ -10,6 +10,7 @@
 
 
     <string name="sign_up">Sign up</string>
+    <string name="Tv_contact_name">Enter Contact fullname here... </string>
 
     <string name="sign_in_now">Sign in now</string>
     <string name="check_password">Check password</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/background"
@@ -11,8 +10,42 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:id="@+id/Et_contact_full_name"
+            android:hint="@string/Tv_contact_name"
+            android:inputType="textPersonName"
+            android:autofillHints="false" />
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:id="@+id/Iv_add_contact"
+            android:layout_width="60dp"
+            android:src="@drawable/add_icon"
+            android:background="@drawable/shape_imageview"
+            android:contentDescription="@string/Tv_contact_name"
+            android:layout_height="60dp">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
 
 
 
