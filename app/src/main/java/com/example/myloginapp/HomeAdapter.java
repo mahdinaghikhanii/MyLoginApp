@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -56,12 +57,22 @@ public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolde
            super(itemView);
            small_tv = itemView.findViewById(R.id.Tv_small);
            description_tv = itemView.findViewById(R.id.Tv_description);
+           itemView.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(itemView.getContext(),description_tv.getText(), Toast.LENGTH_SHORT).show();
+               }
+           });
+
        }
 
        public void setName (String full_name){
            description_tv.setText(full_name);
            small_tv.setText(full_name.substring(0,1));
+
+
        }
+
 
    }
 }
