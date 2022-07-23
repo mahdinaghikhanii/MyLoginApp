@@ -3,6 +3,7 @@
 
     <color name="color_primary">#9C27B0</color>
     <color name="color_accent">#9C27B0</color>
+    <color name="color_gray200">#E0E0E0</color>
 
     <color name="black">#FF000000</color>
     <color name="shape_circle_color">#eee</color>

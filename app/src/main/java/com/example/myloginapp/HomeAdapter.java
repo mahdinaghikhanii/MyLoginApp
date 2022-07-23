@@ -20,15 +20,16 @@ public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolde
         items.add("reza");
         items.add("ALi") ;
         items.add(  "Salam");
-        items.add("ee") ;
-        items.add(  "WHu");
-        items.add("Hello") ;
-        items.add(  "reza");
-        items.add("mahdi") ;
-        items.add(  "reza");
-        items.add("mahdi") ;
         items.add(  "reza");
     }
+
+
+    public  void  addNewContact(String fullName){
+        items.add( 0,fullName);
+        notifyItemInserted(0);
+
+    }
+
 
     @NonNull
     @Override
@@ -62,7 +63,5 @@ public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.HomeViewHolde
            small_tv.setText(full_name.substring(0,1));
        }
 
-
-       public void setonClick(View.OnClickListener clickListener){}
    }
 }

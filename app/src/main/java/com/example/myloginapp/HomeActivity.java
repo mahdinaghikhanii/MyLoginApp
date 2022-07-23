@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
+    private  HomeAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,8 @@ public class HomeActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rv_Home);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-        recyclerView.setAdapter(new  HomeAdapter());
+        adapter = new HomeAdapter();
+        recyclerView.setAdapter(adapter);
 
 
         EditText fullnameET = findViewById(R.id.Et_contact_full_name);
@@ -29,8 +31,8 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (fullnameET.length() > 0){
                     // add new Contact
-
-
+                    adapter.addNewContact(fullnameET.getText().toString());
+                    recyclerView.scrollToPosition(0);
                 }
             }
         });

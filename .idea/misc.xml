@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/add_icon.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edittext_radius.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/image_radius.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/shape_circle.xml" value="0.1195" />
         <entry key="app/src/main/res/drawable/shape_imageview.xml" value="0.1" />

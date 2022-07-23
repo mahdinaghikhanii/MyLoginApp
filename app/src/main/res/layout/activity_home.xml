@@ -5,14 +5,13 @@
     android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_alignParentTop="true">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,15 +19,16 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp">
-
+        android:layout_marginBottom="10dp">
         <EditText
             android:layout_width="300dp"
+            android:padding="12dp"
             android:layout_height="60dp"
-            android:background="@color/white"
+            android:background="@drawable/edittext_radius"
             android:ems="10"
             android:id="@+id/Et_contact_full_name"
             android:hint="@string/Tv_contact_name"
+            android:elevation="4dp"
             android:inputType="textPersonName"
             android:autofillHints="false" />
         <ImageView
@@ -39,14 +39,6 @@
             android:background="@drawable/shape_imageview"
             android:contentDescription="@string/Tv_contact_name"
             android:layout_height="60dp">
-
         </ImageView>
-
-
-
     </LinearLayout>
-
-
-
-
 </RelativeLayout>
